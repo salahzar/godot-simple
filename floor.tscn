@@ -55,6 +55,7 @@ _sections_unfolded = [ "Albedo" ]
 [sub_resource type="CubeMesh" id=2]
 
 material = SubResource( 1 )
+custom_aabb = AABB( 0, 0, 0, 0, 0, 0 )
 size = Vector3( 2, 2, 2 )
 subdivide_width = 0
 subdivide_height = 0
@@ -64,7 +65,7 @@ subdivide_depth = 0
 
 points = PoolVector3Array( -1, 1, 1, 1, 1, -1, 1, 1, 1, -1, 1, -1, -1, -1, 1, 1, -1, -1, 1, -1, 1, -1, -1, -1, 1, 1, 1, -1, 1, -1, 1, 1, -1, -1, 1, 1, 1, -1, 1, -1, -1, -1, 1, -1, -1, -1, -1, 1, 1, 1, 1, -1, -1, 1, -1, 1, 1, 1, -1, 1, 1, 1, -1, -1, -1, -1, -1, 1, -1, 1, -1, -1 )
 
-[node name="floor" type="Spatial"]
+[node name="floor" type="Spatial" index="0"]
 
 [node name="MeshInstance" type="MeshInstance" parent="." index="0"]
 

@@ -1,17 +1,13 @@
 extends KinematicBody
-var counter = 0
 
-# class member variables go here, for example:
-# var a = 2
-# var b = "textvar"
+# direzione di movimento
 var direction = Vector3()
+
+# velocità di movimento
 var speed = 600
 
-func _ready():
-	# Called every time the node is added to the scene.
-	# Initialization here
-	pass
-
+# a ogni frame ci muoviamo nella direzione indicata dal giocatore
+# usando i tasti freccia
 func _physics_process(delta):	
 	move_and_slide(get_direction()*speed*delta,Vector3(0,1,0))
 	
